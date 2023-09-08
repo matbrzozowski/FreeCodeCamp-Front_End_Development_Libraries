@@ -25,15 +25,6 @@ body {
   border-top: none;
 }
 
-.colorScheme,
-.previewWrap,
-.editorWrap textarea {
-  background-color: #c0d8d8;
-  border: 1px solid #1d2f2f;
-  box-shadow: 1px 1px 10px 2px #3a5f5f;
-  border-top: none;
-}
-
 .toolbar {
   display: flex;
   align-items: center;
@@ -49,13 +40,14 @@ body {
   width: 25px;
   margin-left: 5px;
 }
-
+.toolbar .fa-arrows-alt,
 .toolbar .fa-compress {
   margin-left: auto;
 }
 
 .fa-retweet:hover,
-.fa-compress:hover {
+.fa-compress:hover,
+.fa-arrows-alt:hover {
   color: #57e2b1;
   cursor: pointer;
 }
@@ -188,4 +180,3 @@ body {
     font-size: 0.875rem;
   }
 }
-

@@ -48,20 +48,32 @@ And here. | Okay. | I think we get it.
 ![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)`
 
 
+const getpreviewWindowSize = (): string => {
+  return `maximized`;
+};
+
+
 function App() {
   const [markdownText, setMarkDownText] = useState<string>(defaultMarkDown)
+  const [previewWindowSize, setpreviewWindowSize] = useState<string>(getpreviewWindowSize)
 
+
+  const maximizeWindow = () => {
+
+    setpreviewWindowSize(getpreviewWindowSize());
+
+  };
   return (
    
       <div id="app">
         
         <div>
-          <div className="editorWrap">
+          <div className={"editorWrap" + previewWindowSize}  >
 
             <div className="toolbar">
             <i className="fa fa-free-code-camp" title="no-stack-dub-sack"></i>
             "Editor"
-
+            <i className="fa fa-arrows-alt" onClick={maximizeWindow}></i>
             </div>
 
             <textarea name="editor" id="editor" value={markdownText} onChange={(e) => setMarkDownText(e.target.value)}></textarea>
@@ -76,6 +88,7 @@ function App() {
           <div className="toolbar">
             <i className="fa fa-free-code-camp" title="no-stack-dub-sack"></i>
             "Previewer"
+            <i className="fa fa-arrows-alt"></i>
 
             </div>
 
