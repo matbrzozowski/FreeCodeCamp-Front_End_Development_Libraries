@@ -1,6 +1,6 @@
 # Build a Markdown Previewer
 
-You can see the solution [here](https://exquisite-dolphin-089a43.netlify.app/)
+You can find the solution [here](https://exquisite-dolphin-089a43.netlify.app/)
 
 Objective: Build an app that is functionally similar to this: https://markdown-previewer.freecodecamp.rocks/.
 
