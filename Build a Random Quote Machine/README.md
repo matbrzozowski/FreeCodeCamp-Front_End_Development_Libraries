@@ -1,5 +1,7 @@
 # Build a Random Quote Machine
 
+You can see the solution [here]([https://exquisite-dolphin-089a43.netlify.app/](https://eclectic-beignet-e00272.netlify.app/))
+
 Objective: Build an app that is functionally similar to this: https://random-quote-machine.freecodecamp.rocks/.
 
 Fulfill the below user stories and get all of the tests to pass. Use whichever libraries or APIs you need. Give it your own personal style.
